@@ -44,11 +44,12 @@ function renderEmailTemplate(templateName: TemplateName, data: Record<string, an
   return result;
 }
 
-const server = Bun.serve({
-  port: 3001,
-  development: process.env.NODE_ENV !== 'production',
-  
-  async fetch(req) {
+import { createServer } from 'http';
+
+const port = 3001;
+
+const server = createServer(async (req, res) => {
+  try {
     const url = new URL(req.url);
     
     // CORS headers
