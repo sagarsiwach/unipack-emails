@@ -1,0 +1,28 @@
+{
+  "name": "unipack-emails",
+  "version": "1.0.0",
+  "description": "Professional email templates and API service for Unipack",
+  "main": "server/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "email dev",
+    "server": "bun --hot server/index.ts",
+    "build": "email export",
+    "preview": "email preview",
+    "start": "bun server/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "react-email": "^4.2.8"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@react-email/components": "^0.5.0",
+    "@react-email/render": "^1.2.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
