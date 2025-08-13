@@ -9,7 +9,7 @@ import {
   Hr,
   Preview,
 } from '@react-email/components';
-import * as React from 'react';
+import React from 'react';
 
 interface PasswordResetEmailProps {
   username?: string;

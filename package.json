@@ -13,7 +13,11 @@
     "start": "bun server/index.ts"
   },
   "devDependencies": {
+    "@react-email/preview-server": "^4.2.8",
     "@types/bun": "latest",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "picocolors": "^1.1.1",
     "react-email": "^4.2.8"
   },
   "peerDependencies": {

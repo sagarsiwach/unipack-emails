@@ -10,7 +10,7 @@ import {
   Link,
   Preview,
 } from '@react-email/components';
-import * as React from 'react';
+import React from 'react';
 
 interface NewsletterEmailProps {
   title?: string;
